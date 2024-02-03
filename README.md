@@ -33,10 +33,38 @@ Our before metrics will showcase what our environment looks like when we intenti
 # Attack Maps BEFORE Hardening / Security Controls
 
 <h3>SSH Authentication Failure Map</h3>
+
+The attack map below highlights a handful of attackers attempting to brute force their way into our Linux virtual machine 
+resulting in failed syslog authentications.  
+
 ![img](https://i.imgur.com/5obqPWt.png)
 
+
 <h3>Network Security Groups Open Ports Map</h3>
+
+The attack map below highlights the consequences of leaving your Network Security Groups open. When NSG's are not properly configured, it's an invitation for malicious traffic to make its way into your organization and compromise your system. 
+
 ![img](https://i.imgur.com/PA55maQ.png)
 
+
 <h3>Windows RDP/SMB Authentication Failure Map</h3>
+
+The attack map below highlights a handful of attackers attempting to exploit SMB and RDP protocols within our vulnerable Windows machine. 
+
 ![img](https://i.imgur.com/0is25A1.png)
+
+
+## Metrics Before Hardening / Security Controls
+
+The following table shows the metrics we measured in our insecure environment for 24 hours:
+
+<b>Start Time</b> 2/1/2024, 10:53:52.201 PM
+<b>Stop Time</b> 2/2/2024, 10:53:52.201 PM
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent            | 66810
+| Syslog                   | 31174
+| SecurityAlert            | 3
+| SecurityIncident         | 362
+| AzureNetworkAnalytics_CL | 1069
